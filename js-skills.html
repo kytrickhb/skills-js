@@ -299,7 +299,23 @@
 </fieldset>
 
 <script>
-  // put your code here
+
+  //so far not working, the image arrives when the page is loaded, doesn't wait for click
+
+  var porkImage = $('#cute-porcupine-image');
+  var porkButton = $('#make-a-porcupine');
+
+  porkButton.on('click', waitForPork);
+  
+  function makePork() {
+    porkImage.fadeIn(1000);
+  }
+
+  function waitForPork(){
+    setTimeout(makePork, 1000);
+
+  }
+
 </script>
 
 <div class="hint">
