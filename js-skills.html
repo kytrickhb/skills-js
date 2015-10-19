@@ -236,7 +236,7 @@
    }
 
    $('.tricky-to-find').on('click', alertMe);
-   
+
 </script>
 
 <div class="hint">
@@ -244,10 +244,6 @@
     You can find things by class name&mdash;but then you get back an array.
   </div>
 </div>
-
-
-
-
 
 <h3>Down with Cats!</h3>
 <p>
@@ -258,11 +254,18 @@
 </p>
 
 <fieldset>
+
   <img src="http://www.wallspick.com/wp-content/uploads/2014/12/Grey-Eyes-Cute-Cat-640x400.jpg"
        alt="Adorbz" id="kittenz-rule">
 </fieldset>
 
 <script>
+
+  $('#kittenz-rule').on('dblclick', switchToDog)
+
+  function switchToDog(){
+    $('#kittenz-rule').attr("src", "http://images4.fanpop.com/image/photos/19800000/beagle-pups-baby-animals-19818287-400-309.jpg")
+  }
   // put your code here
 </script>
 
